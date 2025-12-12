@@ -85,7 +85,7 @@ cd ..
 echo "📚 Step 4: VitePress 문서 배포"
 cd vitepress-app
 npm run docs:build
-aws s3 sync .vitepress/dist s3://kira-releases --delete --exclude 'download/*'
+aws s3 sync .vitepress/dist s3://kira-releases --delete --exclude 'download/*' --exclude 'videos/*'
 echo "   ✅ VitePress 문서 배포 완료"
 echo ""
 cd ..

@@ -24,6 +24,12 @@
 
 KIRA is an open-source project that repackages **KRIS (KRAFTON Intelligence System)**—an AI agent system successfully used internally at KRAFTON—into a "virtual coworker" concept that anyone can install and use as a standalone desktop application.
 
+### 🎬 Demo
+
+| Search + PPTX | GitRepo + PDF | Web + Wiki | Proactive + Thread |
+|:---:|:---:|:---:|:---:|
+| <video src="https://github.com/user-attachments/assets/d3b09c2c-b888-419c-aa9d-9c0637821b33" width="180" controls></video> | <video src="https://github.com/user-attachments/assets/c4415982-a8fc-400d-b355-5da98e2bf6c7" width="180" controls></video> | <video src="https://github.com/user-attachments/assets/18f526a2-6342-4192-a391-75349460dc53" width="180" controls></video> | <video src="https://github.com/user-attachments/assets/8b9b1e3f-afae-4022-ba1c-412154286b24" width="180" controls></video> |
+
 KIRA is an **AI virtual coworker** that runs as a desktop application. Once installed:
 
 - 🤖 **Chat in Slack**: Natural conversations in DMs, channels, and threads
