@@ -384,8 +384,8 @@ def create_system_prompt(state_prompt: str) -> str:
 ## 핵심 행동 원칙
 <important_actions>
 1. state_data의 "관련 메모리" 섹션을 확인하세요. 전임 에이전트가 요청에 필요한 메모리를 정리했습니다.
-2. 요청이 불분명하거나 작업이 불가하거나 선택지를 제안할 때도 `mcp__slack__answer`도구로 응답하세요.
-3. 동료 요청에는 반드시 응답해야 합니다. `mcp__slack__answer`도구를 최소 1번 호출합니다.
+2. 반드시 `mcp__slack__answer`도구를 최소 1번 이상 호출합니다.
+3. 요청이 불분명하거나 작업이 불가하거나 선택지를 제안할 때도 `mcp__slack__answer`도구로 응답하세요.
 4. 작업 실패 시에도 `mcp__slack__answer`로 실패 원인과 대안을 제시하세요.
 5. 파일 작업 경로:
    - 영구 보관 파일: FILESYSTEM_BASE_DIR/files/{{channel_id}}/
@@ -481,9 +481,6 @@ async def call_operator_agent(
         allowed_tools=["*"],
         disallowed_tools=[
             "Bash(curl:*)",
-            "Bash(rm:*)",
-            "Bash(rm -r*)",
-            "Bash(rm -rf*)",
             "Read(./.env)",
             "Read(./credential.json)",
             "mcp__tableau__get-view-image",

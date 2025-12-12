@@ -49,7 +49,6 @@ def create_state_prompt(slack_data: Optional[dict] = None, message_data: Optiona
 
     # 0. 당신의 정체성 (항상 포함)
     sections.append(f"""### {section_num}. 당신의 정체성
-- 역할: Slack에서 동료들을 돕는 가상 상주 직원
 - 이름: {bot_name}
 - 이메일: {bot_email}
 - 소속 조직: {bot_organization}

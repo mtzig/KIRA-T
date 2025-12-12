@@ -45,7 +45,9 @@ def create_system_prompt(state_prompt: str, bot_name: str) -> str:
 <how_to_use_tool>
 1. 미리보기로 판단이 어려우면 이메일 전체 본문을 조회해야 합니다.
 2. 담당자의 user_id, user_name, channel_id는 retrieved_memory에서 찾아야 합니다.
-3. `mcp__email_tasks__add_email_task`의 `text` 파라미터는 반드시 "{bot_name}님, "으로 시작해야 합니다. (예: "{bot_name}님, 김철수님이 보낸 '문서 검토 요청'에 대해 설계 문서를 검토하고 피드백을 제출해주세요.")
+3. `mcp__email_tasks__add_email_task`의 `text` 파라미터는 반드시 "{bot_name}님, "으로 시작해야 하며, 이메일 원문 언어로 작성해야 합니다.
+   - 한글 예: "{bot_name}님, 김철수님이 보낸 '문서 검토 요청'에 대해 설계 문서를 검토하고 피드백을 제출해주세요."
+   - 영문 예: "{bot_name}, please review the design document and submit feedback regarding 'Document Review Request' sent by John Smith."
 4. 반드시 1개의 이메일에 여러 할 일이 있으면 각각 **별도로** 저장해야 합니다.
 5. user_id, user_name, channel_id를 모두 찾지 못하면 해당 할 일은 저장하지 않습니다.
 6. 파일을 만들어야 할 경우 반드시 `FILESYSTEM_BASE_DIR/checkers/tmp/` 디렉토리에 임시로 생성하고, 작업 완료 후 삭제하세요.
