@@ -74,6 +74,33 @@ features:
 
 KIRA는 KRAFTON 사내에서 성공적으로 사용 중인 AI 에이전트 시스템 **KRIS (KRAFTON Intelligence System)**를 "가상 직원" 컨셉에 맞게 리패키징한 오픈소스 프로젝트입니다. 누구나 설치하고 바로 사용할 수 있는 데스크톱 앱으로 만들었습니다 — 서버 설정도, 클라우드도 필요 없이 설치만 하면 끝.
 
+### 🎬 데모
+
+<div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin: 24px 0;">
+  <div style="text-align: center; max-width: 280px;">
+    <video src="https://kira.krafton-ai.com/videos/Search+PPTX_cut.mp4" width="280" controls style="border-radius: 8px;"></video>
+    <p style="margin-top: 8px; font-size: 14px; color: #666;">가상 직원에게 자료 조사 후 발표자료 만들어달라고 부탁</p>
+  </div>
+  <div style="text-align: center; max-width: 280px;">
+    <video src="https://kira.krafton-ai.com/videos/GitRepo+PDF_cut.mp4" width="280" controls style="border-radius: 8px;"></video>
+    <p style="margin-top: 8px; font-size: 14px; color: #666;">가상 직원에게 코드 리뷰 후 PDF로 정리해달라고 부탁</p>
+  </div>
+  <div style="text-align: center; max-width: 280px;">
+    <video src="https://kira.krafton-ai.com/videos/WebInterface+Wiki_cut.mp4" width="280" controls style="border-radius: 8px;"></video>
+    <p style="margin-top: 8px; font-size: 14px; color: #666;">가상 직원에게 음성으로 말하고 위키 업데이트 부탁</p>
+  </div>
+  <div style="text-align: center; max-width: 280px;">
+    <video src="https://kira.krafton-ai.com/videos/Proactive+BotInThread_cut.mp4" width="280" controls style="border-radius: 8px;"></video>
+    <p style="margin-top: 8px; font-size: 14px; color: #666;">가상 직원이 과거 업무 기반으로 먼저 도움을 제안</p>
+  </div>
+</div>
+
+::: warning 베타 버전
+KIRA는 현재 베타 버전입니다. 몇 가지 참고 사항:
+- **응답 속도**: 가상 직원처럼 동작하기 위해 여러 에이전트가 협업하므로 응답이 약간 느릴 수 있습니다.
+- **언어 지원**: 한국어와 영어를 지원하지만, 한국어에 최적화되어 있습니다.
+:::
+
 ---
 
 ## 🚀 빠른 시작
