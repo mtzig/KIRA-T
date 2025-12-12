@@ -26,9 +26,13 @@ KIRA is an open-source project that repackages **KRIS (KRAFTON Intelligence Syst
 
 ### 🎬 Demo
 
-| Search + PPTX | GitRepo + PDF | Web + Wiki | Proactive + Thread |
-|:---:|:---:|:---:|:---:|
-| <video src="https://github.com/user-attachments/assets/d3b09c2c-b888-419c-aa9d-9c0637821b33" width="180" controls></video> | <video src="https://github.com/user-attachments/assets/c4415982-a8fc-400d-b355-5da98e2bf6c7" width="180" controls></video> | <video src="https://github.com/user-attachments/assets/18f526a2-6342-4192-a391-75349460dc53" width="180" controls></video> | <video src="https://github.com/user-attachments/assets/8b9b1e3f-afae-4022-ba1c-412154286b24" width="180" controls></video> |
+| Search + PPTX | GitRepo + PDF | Web + Wiki |
+|:---:|:---:|:---:|
+| <video src="https://github.com/user-attachments/assets/d3b09c2c-b888-419c-aa9d-9c0637821b33" width="240" controls></video> | <video src="https://github.com/user-attachments/assets/c4415982-a8fc-400d-b355-5da98e2bf6c7" width="240" controls></video> | <video src="https://github.com/user-attachments/assets/18f526a2-6342-4192-a391-75349460dc53" width="240" controls></video> |
+
+| Proactive + Thread | Email + Schedule | Proactive + Translate |
+|:---:|:---:|:---:|
+| <video src="https://github.com/user-attachments/assets/8b9b1e3f-afae-4022-ba1c-412154286b24" width="240" controls></video> | <video src="https://github.com/user-attachments/assets/fbbfe4d4-692e-48b7-a046-b061c49a977a" width="240" controls></video> | <video src="https://github.com/user-attachments/assets/6d1ad182-c1f6-43ec-af08-14c0bc7b6f2e" width="240" controls></video> |
 
 KIRA is an **AI virtual coworker** that runs as a desktop application. Once installed:
 

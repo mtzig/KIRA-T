@@ -67,6 +67,10 @@ Before you begin, you'll need:
 - **macOS**: 10.15 (Catalina) or later
 - Free disk space: 500MB or more
 
+### 4. Claude Pro Plan
+- KIRA uses Claude Code internally, which requires a **Claude Pro plan or higher**
+- [Learn more about Claude plans](https://www.anthropic.com/pricing)
+
 ---
 
 ## 🛠️ Step 1: Install Required Tools
