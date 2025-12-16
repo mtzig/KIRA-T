@@ -72,7 +72,7 @@ features:
 
 > **KIRA** = **K**RAFTON **I**NTELLIGENCE **R**OOKIE **A**GENT
 
-KIRA는 KRAFTON 사내에서 성공적으로 사용 중인 AI 에이전트 시스템 **KRIS (KRAFTON Intelligence System)**를 "가상 직원" 컨셉에 맞게 리패키징한 오픈소스 프로젝트입니다. 누구나 설치하고 바로 사용할 수 있는 데스크톱 앱으로 만들었습니다 — 서버 설정도, 클라우드도 필요 없이 설치만 하면 끝.
+KIRA는 KRAFTON 사내에서 성공적으로 사용 중인 AI 에이전트 시스템 <strong>KRIS (KRAFTON Intelligence System)</strong>를 "가상 직원" 컨셉에 맞게 리패키징한 오픈소스 프로젝트입니다. 누구나 설치하고 바로 사용할 수 있는 데스크톱 앱으로 만들었습니다 — 서버 설정도, 클라우드도 필요 없이 설치만 하면 끝.
 
 ### 🎬 데모
 
