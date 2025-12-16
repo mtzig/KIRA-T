@@ -51,7 +51,7 @@ def create_system_prompt(state_prompt: str, memories_path: str) -> str:
 
 ## 워크플로우
 <workflow>
-1. 반드시 `slack-employee-memory` skill을 사용하여 메모리를 관리합니다.
+1. 반드시 `slack-memory-store` skill을 사용하여 메모리를 관리합니다.
 2. 전달받은 정보를 분석하고, 적절한 메타데이터를 추출합니다.
 3. add_memory.py 스크립트를 사용하여 자동 분류 및 저장합니다.
 4. 주기적으로 update_index.py를 실행하여 인덱스를 갱신합니다.

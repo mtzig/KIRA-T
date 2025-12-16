@@ -1,9 +1,9 @@
 ---
-name: slack-employee-memory
-description: Comprehensive memory management system for AI employees in IT companies who communicate via Slack. Automatically classifies and stores diverse information types (Slack messages, Confluence docs, emails, meetings, projects, decisions, feedback) in an organized folder structure with efficient indexing and retrieval. Use when managing or searching employee memory, storing conversations, documenting decisions, tracking projects, or organizing any work-related information.
+name: slack-memory-store
+description: Comprehensive memory storage system for AI employees in IT companies who communicate via Slack. Automatically classifies and stores diverse information types (Slack messages, Confluence docs, emails, meetings, projects, decisions, feedback) in an organized folder structure with efficient indexing and retrieval. Use when managing or searching employee memory, storing conversations, documenting decisions, tracking projects, or organizing any work-related information.
 ---
 
-# Slack Employee Memory Management
+# Slack Memory Store
 
 This skill enables systematic memory management for AI employees operating in IT company environments, primarily through Slack communication.
 

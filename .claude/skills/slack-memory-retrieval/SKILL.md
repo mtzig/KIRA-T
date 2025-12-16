@@ -1,6 +1,6 @@
 ---
 name: slack-memory-retrieval
-description: Retrieve and utilize stored memories for AI employees in Slack environments. Efficiently searches and loads relevant context (channels, users, projects, decisions, meetings) from organized memory storage to inform responses. Use this when answering questions that require historical context, user preferences, project status, or any previously stored information. Works with slack-employee-memory storage system.
+description: Retrieve and utilize stored memories for AI employees in Slack environments. Efficiently searches and loads relevant context (channels, users, projects, decisions, meetings) from organized memory storage to inform responses. Use this when answering questions that require historical context, user preferences, project status, or any previously stored information. Works with slack-memory-store storage system.
 ---
 
 # Slack Memory Retrieval
@@ -405,7 +405,7 @@ Response: "화요일 기획회의에서 신규 기능 3개를 최종 확정했�
 
 ## Integration with Memory Management
 
-This skill works in tandem with `slack-employee-memory`:
+This skill works in tandem with `slack-memory-store`:
 
 **Memory Management (separate agent):**
 - Stores new information

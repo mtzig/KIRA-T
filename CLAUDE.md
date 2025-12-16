@@ -2,15 +2,15 @@
 
 This file provides critical guidance to Claude Code (claude.ai/code) when working with the KIRA project.
 
-## 🎯 Core Concept: "Install App = Hire AI Employee"
+## 🎯 Core Concept: "Install App = Hire AI Coworker"
 
-**CRITICAL UNDERSTANDING**: This project's revolutionary concept is that installing the desktop app instantly transforms any computer into an AI employee. No servers, no cloud setup, no technical expertise required - just like installing Microsoft Office.
+**CRITICAL UNDERSTANDING**: This project's revolutionary concept is that installing the desktop app instantly transforms any computer into an AI coworker. No servers, no cloud setup, no technical expertise required - just like installing Microsoft Office.
 
 ### The Vision
 - **End Users**: Non-technical people who need an AI assistant
 - **Installation**: As simple as installing any desktop application
 - **Configuration**: GUI-based, no terminal or coding required
-- **Result**: A fully functional AI employee working 24/7
+- **Result**: A fully functional AI coworker working 24/7
 
 ### Development Philosophy
 When developing ANY feature, always ask:
@@ -363,7 +363,7 @@ $FILESYSTEM_BASE_DIR/memories/  # 기본: ~/Documents/KIRA/memories/
 └── index.md            # 자동 생성 인덱스
 ```
 - **형식**: Markdown 파일
-- **관리**: `slack-employee-memory` skill 사용
+- **관리**: `slack-memory-store` skill 사용
 - **검색**: Memory Retriever가 인덱스 기반 검색
 - **저장**: Memory Manager가 자동 분류 및 저장
 
@@ -842,7 +842,7 @@ Every line of code should consider:
 - **The IT Admin** who needs to deploy to 50 computers
 - **The Solo Founder** working at 2 AM
 
-This isn't just a bot - it's an AI employee that lives in a desktop app. Make it feel like hiring a helpful colleague, not configuring a server.
+This isn't just a bot - it's an AI coworker that lives in a desktop app. Make it feel like hiring a helpful colleague, not configuring a server.
 
 ---
 
@@ -923,7 +923,7 @@ npm run deploy     # 빌드 + S3 업로드
 
 ---
 
-**Final Note for Claude Code**: When in doubt, prioritize simplicity and user experience over technical elegance. The best code is the code that lets non-developers successfully deploy their own AI employee.
+**Final Note for Claude Code**: When in doubt, prioritize simplicity and user experience over technical elegance. The best code is the code that lets non-developers successfully deploy their own AI coworker.
 
 **추가 변경 시 반드시 체크**:
 - 환경변수 4곳 동기화 (settings.py, dev.env, index.html, main.js)

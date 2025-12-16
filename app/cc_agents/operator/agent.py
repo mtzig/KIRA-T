@@ -335,7 +335,7 @@ async def save_to_memory(
 **작업 처리 내역:**
 {final_message}
 
-`slack-employee-memory` skill을 사용해서 이 정보를 적절한 카테고리에 분류하고 저장하세요.
+`slack-memory-store` skill을 사용해서 이 정보를 적절한 카테고리에 분류하고 저장하세요.
 반드시 작업의 성공/실패 사례를 저장하세요.
 소속 팀 동료와 관련된 사항은 반드시 저장합니다.
 """

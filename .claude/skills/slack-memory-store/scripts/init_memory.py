@@ -106,7 +106,7 @@ def create_metadata(base_path: Path) -> None:
     metadata_content = f"""---
 created: {datetime.now().isoformat()}
 version: 1.0.0
-structure_type: slack-employee-memory
+structure_type: slack-memory-store
 ---
 """
     

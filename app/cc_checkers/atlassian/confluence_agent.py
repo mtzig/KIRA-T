@@ -29,7 +29,7 @@ async def save_to_memory(content: str) -> None:
 
 {content}
 
-`slack-employee-memory` skill을 사용해서 이 정보를 적절한 카테고리에 분류하고 저장하세요.
+`slack-memory-store` skill을 사용해서 이 정보를 적절한 카테고리에 분류하고 저장하세요.
 소속 팀 동료와 관련된 사항은 반드시 저장합니다.
 """
 

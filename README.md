@@ -50,13 +50,13 @@ KIRA is an **AI virtual coworker** that runs as a desktop application. Once inst
 - Personal AI assistant that you manage
 - Stops when your computer is off
 
-**👤 Virtual Employee Mode**
+**👤 Virtual Coworker Mode**
 - Install on a **dedicated computer** (or VM/server)
 - Create a dedicated Slack account for the AI (e.g., "KIRA Kim")
 - Runs 24/7 independently as a real team member
 - Shared by the entire team
 
-> 💡 **KRAFTON Use Case**: KRAFTON provides a dedicated company account and computer to run KIRA as a virtual employee, just like onboarding a new hire.
+> 💡 **KRAFTON Use Case**: KRAFTON provides a dedicated company account and computer to run KIRA as a virtual coworker, just like onboarding a new hire.
 
 ---
 
