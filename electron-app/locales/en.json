@@ -4,7 +4,8 @@
   },
   "nav": {
     "start": "Start",
-    "settings": "Settings"
+    "settings": "Settings",
+    "model": "Models"
   },
   "landing": {
     "preparing": "{{botName}} is ready to work.",
@@ -30,6 +31,7 @@
     "sections": {
       "slackConnection": "Required - Slack Connection",
       "botInfo": "Required - Bot Information",
+      "aiModel": "AI Model Settings",
       "mcp": "MCP Settings",
       "remoteMcp": "Remote MCP Settings",
       "computerUse": "Computer Use",
@@ -190,5 +192,15 @@
   "debug": {
     "slackMessages": "Send Slack Messages on Error",
     "slackMessagesDesc": "Send notification messages to Slack when agent errors occur"
+  },
+  "aiModel": {
+    "simple": "Simple Tasks (Bot call detection, classification, etc.)",
+    "moderate": "Moderate Tasks (Memory management, summarization, etc.)",
+    "complex": "Complex Tasks (Core task execution)"
+  },
+  "model": {
+    "title": "Model Settings",
+    "subtitle": "AI Model Selection",
+    "haikuWarning": "⚠️ Haiku model is currently unavailable due to a Claude API issue. <a href=\"https://github.com/anthropics/claude-code/issues/15015\" target=\"_blank\">Related Issue</a>"
   }
 }

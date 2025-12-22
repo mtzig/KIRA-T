@@ -477,7 +477,7 @@ async def call_operator_agent(
     options = ClaudeAgentOptions(
         mcp_servers=mcp_servers,
         system_prompt=system_prompt,
-        model=settings.OPUS_MODEL,
+        model=settings.MODEL_FOR_COMPLEX,
         permission_mode="bypassPermissions",
         allowed_tools=["*"],
         disallowed_tools=[

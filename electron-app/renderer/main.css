@@ -764,6 +764,15 @@ body {
   color: #faa81a;
 }
 
+.notice-box a {
+  color: #faa81a;
+  text-decoration: underline;
+}
+
+.notice-box a:hover {
+  color: #ffcc00;
+}
+
 .info-box {
   background-color: rgba(88, 101, 242, 0.1);
   border: 1px solid rgba(88, 101, 242, 0.3);

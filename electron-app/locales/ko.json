@@ -4,7 +4,8 @@
   },
   "nav": {
     "start": "활동 시작",
-    "settings": "환경변수 설정"
+    "settings": "환경변수 설정",
+    "model": "모델 설정"
   },
   "landing": {
     "preparing": "{{botName}}님이 업무를 준비 중입니다.",
@@ -30,6 +31,7 @@
     "sections": {
       "slackConnection": "필수 설정 - Slack 연동",
       "botInfo": "필수 설정 - 봇 정보",
+      "aiModel": "AI 모델 설정",
       "mcp": "MCP 설정",
       "remoteMcp": "Remote MCP 설정",
       "computerUse": "Computer Use",
@@ -190,5 +192,15 @@
   "debug": {
     "slackMessages": "에러 시 Slack 메시지 전송",
     "slackMessagesDesc": "에이전트 에러 발생 시 Slack으로 알림 메시지를 전송합니다"
+  },
+  "aiModel": {
+    "simple": "판단용 (봇 호출 감지, 분류 등)",
+    "moderate": "분석용 (메모리 관리, 요약 등)",
+    "complex": "작업용 (핵심 작업 수행)"
+  },
+  "model": {
+    "title": "모델 설정",
+    "subtitle": "AI 모델 선택",
+    "haikuWarning": "⚠️ Claude API 이슈로 현재 Haiku 모델을 선택할 수 없습니다. <a href=\"https://github.com/anthropics/claude-code/issues/15015\" target=\"_blank\">관련 이슈</a>"
   }
 }

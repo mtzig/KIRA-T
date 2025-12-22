@@ -68,7 +68,7 @@ JSON 배열로만 응답 (설명 없이):
 
     options = ClaudeAgentOptions(
         system_prompt=prompt,
-        model=settings.HAIKU_MODEL,
+        model=settings.MODEL_FOR_SIMPLE,
         permission_mode="bypassPermissions",
         allowed_tools=["*"],
         disallowed_tools=[

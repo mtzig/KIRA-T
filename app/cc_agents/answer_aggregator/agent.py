@@ -104,7 +104,7 @@ async def call_answer_aggregator(
             "slack": create_slack_mcp_server(),
         },
         system_prompt=system_prompt,
-        model=settings.SONNET_MODEL,
+        model=settings.MODEL_FOR_MODERATE,
         permission_mode="bypassPermissions",
         allowed_tools=[
             "mcp__waiting_answer__update_request",

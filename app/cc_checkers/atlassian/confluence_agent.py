@@ -199,7 +199,7 @@ URL: {page_url}
 
     options = ClaudeAgentOptions(
         system_prompt=system_prompt,
-        model=settings.HAIKU_MODEL,
+        model=settings.MODEL_FOR_SIMPLE,
         permission_mode="bypassPermissions",
         allowed_tools=["*"],
         disallowed_tools=[

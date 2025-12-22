@@ -11,10 +11,10 @@ class Settings(BaseSettings):
     # 공통 환경
     APP_ENV: str = ""
 
-    # 모델명 (Vertex AI 사용 여부에 따라 동적으로 설정)
-    HAIKU_MODEL: str = "haiku"
-    SONNET_MODEL: str = "sonnet"
-    OPUS_MODEL: str = "opus"
+    # AI 모델 설정 (Electron 앱에서 선택 가능, Vertex AI 사용 시 자동 변환)
+    MODEL_FOR_SIMPLE: str = "sonnet"     # 판단용 (봇 호출 감지, 분류 등)
+    MODEL_FOR_MODERATE: str = "sonnet"   # 분석용 (메모리 관리, 요약 등)
+    MODEL_FOR_COMPLEX: str = "sonnet"    # 작업용 (핵심 작업 수행)
 
     # SLACK 관련
     SLACK_BOT_TOKEN: str = ""
@@ -144,9 +144,15 @@ class Settings(BaseSettings):
             os.environ['ANTHROPIC_VERTEX_REGION'] = 'us-east5'
             os.environ['CLAUDE_CODE_USE_VERTEX'] = "1"
             # Pydantic v2 BaseSettings는 frozen이므로 object.__setattr__ 사용
-            object.__setattr__(self, 'HAIKU_MODEL', "claude-haiku-4-5@20251001")
-            object.__setattr__(self, 'SONNET_MODEL', "claude-sonnet-4-5@20250929")
-            object.__setattr__(self, 'OPUS_MODEL', "claude-opus-4-5@20251101")
+            # 사용자 선택 모델을 Vertex AI 모델명으로 변환
+            vertex_model_map = {
+                "haiku": "claude-haiku-4-5@20251001",
+                "sonnet": "claude-sonnet-4-5@20250929",
+                "opus": "claude-opus-4-5@20251101",
+            }
+            object.__setattr__(self, 'MODEL_FOR_SIMPLE', vertex_model_map.get(self.MODEL_FOR_SIMPLE, self.MODEL_FOR_SIMPLE))
+            object.__setattr__(self, 'MODEL_FOR_MODERATE', vertex_model_map.get(self.MODEL_FOR_MODERATE, self.MODEL_FOR_MODERATE))
+            object.__setattr__(self, 'MODEL_FOR_COMPLEX', vertex_model_map.get(self.MODEL_FOR_COMPLEX, self.MODEL_FOR_COMPLEX))
 
 @lru_cache
 def get_settings() -> Settings:

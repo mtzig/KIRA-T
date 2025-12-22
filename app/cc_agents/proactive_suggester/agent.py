@@ -107,6 +107,8 @@ async def call_proactive_suggester(
     Returns:
         bool: 제안을 보냈으면 True, 아니면 False
     """
+    settings = get_settings()
+
     # 메모리가 없거나 "관련된 메모리가 없습니다"면 바로 False
     if not retrieved_memory or "관련된 메모리가 없습니다" in retrieved_memory:
         logging.info(f"[PROACTIVE_SUGGESTER] No relevant memory, skipping")
@@ -126,7 +128,7 @@ async def call_proactive_suggester(
             "confirm": create_confirm_mcp_server(),
         },
         system_prompt=system_prompt,
-        model=settings.SONNET_MODEL,
+        model=settings.MODEL_FOR_MODERATE,
         permission_mode="bypassPermissions",
         allowed_tools=[
             "mcp__confirm__request_confirmation"

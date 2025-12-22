@@ -47,7 +47,14 @@ function changeLanguage(lang) {
 function updatePageTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const translated = t(el.getAttribute('data-i18n'));
-    if (translated) el.textContent = translated;
+    if (translated) {
+      // HTML 태그가 포함된 경우 innerHTML 사용
+      if (translated.includes('<a ') || translated.includes('<strong>')) {
+        el.innerHTML = translated;
+      } else {
+        el.textContent = translated;
+      }
+    }
   });
 }
 
@@ -67,6 +74,10 @@ const fields = [
   'BOT_AUTHORIZED_USERS_KR',
   'BOT_ROLE',
   'FILESYSTEM_BASE_DIR',
+  // AI 모델 설정
+  'MODEL_FOR_SIMPLE',
+  'MODEL_FOR_MODERATE',
+  'MODEL_FOR_COMPLEX',
   // MCP 설정
   'PERPLEXITY_ENABLED',
   'PERPLEXITY_API_KEY',
@@ -311,6 +322,12 @@ function setupNavigation() {
 function setupEventListeners() {
   // Save button
   document.getElementById('saveBtn').addEventListener('click', saveConfig);
+
+  // Save model button (same function, different button)
+  const saveModelBtn = document.getElementById('saveModelBtn');
+  if (saveModelBtn) {
+    saveModelBtn.addEventListener('click', saveConfig);
+  }
 
   // Server controls
   document.getElementById('startServerBtn').addEventListener('click', startServer);
@@ -741,10 +758,18 @@ async function saveConfig() {
   const result = await window.api.saveConfig(config);
 
   const status = document.getElementById('saveStatus');
+  const modelStatus = document.getElementById('saveModelStatus');
 
   if (result.success) {
-    status.textContent = t('settings.saved');
-    status.className = 'status success';
+    // Update both status elements
+    if (status) {
+      status.textContent = t('settings.saved');
+      status.className = 'status success';
+    }
+    if (modelStatus) {
+      modelStatus.textContent = t('settings.saved');
+      modelStatus.className = 'status success';
+    }
 
     // Update bot name display immediately after save
     const newBotName = document.getElementById('BOT_NAME')?.value;
@@ -757,11 +782,18 @@ async function saveConfig() {
     }
 
     setTimeout(() => {
-      status.textContent = '';
+      if (status) status.textContent = '';
+      if (modelStatus) modelStatus.textContent = '';
     }, 3000);
   } else {
-    status.textContent = t('settings.saveFailed');
-    status.className = 'status error';
+    if (status) {
+      status.textContent = t('settings.saveFailed');
+      status.className = 'status error';
+    }
+    if (modelStatus) {
+      modelStatus.textContent = t('settings.saveFailed');
+      modelStatus.className = 'status error';
+    }
   }
 }
 
