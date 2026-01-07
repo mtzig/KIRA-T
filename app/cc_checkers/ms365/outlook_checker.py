@@ -194,12 +194,12 @@ async def process_emails_batch(emails: List[Dict[str, Any]]):
         channel_id = task.get("channel")
         text = task.get("text")
 
-        # user, channel, text가 모두 있어야 큐에 추가 가능
+        # Can only add to queue if user, channel, text all exist
         if not user_id or not channel_id or not text:
             logging.warning(f"[EMAIL_PROCESSOR] Task {task_id} missing user/channel/text, skipping")
             continue
 
-        # Slack 큐에 추가 (웹 인터페이스와 동일한 패턴)
+        # Add to Slack queue (same pattern as web interface)
         await enqueue_message({
             "text": text,
             "channel": channel_id,

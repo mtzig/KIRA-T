@@ -206,9 +206,9 @@ URL: {issue_url}
                     )
                     break
 
-            # 할 일이 없으면 None 반환
+            # Return None if no tasks
             if not result_message or (
-                "할 일" in result_message and "없" in result_message
+                "no task" in result_message.lower() and "found" in result_message.lower()
             ):
                 logging.info("[JIRA_TASK_EXTRACTOR] No tasks extracted")
                 return None

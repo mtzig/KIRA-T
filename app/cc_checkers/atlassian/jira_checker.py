@@ -254,7 +254,7 @@ async def check_jira_updates():
             logger.info(
                 f"[JIRA_CHECKER] Found {len(issues)} assigned issues, starting background processing"
             )
-            # 백그라운드 태스크로 처리
+            # Process as background task
             asyncio.create_task(process_issues_batch(issues))
         else:
             logger.info("[JIRA_CHECKER] No assigned issues found")
