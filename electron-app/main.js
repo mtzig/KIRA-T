@@ -9,7 +9,7 @@
  * 5. Auto-updater functionality
  */
 
-const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell, Menu } = require('electron');
 const { autoUpdater } = require('electron-updater');
 const log = require('electron-log');
 const { spawn, execSync } = require('child_process');
@@ -976,7 +976,8 @@ app.whenReady().then(() => {
 
   createMainWindow();
   registerIPCHandlers();
-
+  // 메뉴 완전 제거
+  Menu.setApplicationMenu(null);
   // Setup and check for updates
   if (app.isPackaged) {
     setupAutoUpdater();
