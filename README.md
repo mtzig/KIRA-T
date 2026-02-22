@@ -11,6 +11,11 @@
 
 ## Usage
 
+Load api key with
+```bash
+source ./load_credentials.sh
+```
+
 ```bash
 uv run harbor run \
     --dataset terminal-bench-sample@2.0 \
